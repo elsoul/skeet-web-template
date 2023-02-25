@@ -1,0 +1,20 @@
+{
+  "title": "ドキュメントホーム",
+  "motivationTitle": "モチベーション",
+  "motivationBody": "ビジネスの本質に集中できる開発基盤を提供します。メディアサイトもオープンソースでスタートできます！",
+  "quickstartTitle": "クイックスタート",
+  "quickstartBody": "Media SSG Template クイックスタート",
+  "body": "シンタックスハイライト対応のドキュメント作成をすぐにスタートできます",
+  "previousPage": "前のページ",
+  "nextPage": "次のページ",
+  "menuNav": {
+    "home": "ドキュメントホーム",
+    "motivation": "モチベーション",
+    "quickstart": "クイックスタート",
+    "readme": "README"
+  },
+  "headerNav": {
+    "home": "ホームページ",
+    "blog": "ブログ"
+  }
+}
