@@ -141,7 +141,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Aregreya', 'M PLUS Rounded 1c', ...fontFamily.sans],
+        sans: ['Outfit', 'Noto Sans JP', ...fontFamily.sans],
       },
     },
   },
