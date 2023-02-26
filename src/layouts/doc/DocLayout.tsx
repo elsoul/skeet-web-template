@@ -202,7 +202,7 @@ export default function DocLayout({ children }: Props) {
                       {docHeaderNav.map((item) => (
                         <Menu.Item key={item.name}>
                           {({ active }) => (
-                            <a
+                            <Link
                               href={item.href}
                               className={clsx(
                                 active
@@ -212,7 +212,7 @@ export default function DocLayout({ children }: Props) {
                               )}
                             >
                               {t(item.name)}
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                       ))}
