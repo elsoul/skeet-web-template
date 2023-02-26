@@ -167,7 +167,7 @@ export default function DocLayout({ children }: Props) {
           </div>
         </div>
         <div className="flex flex-1 flex-col lg:pl-64">
-          <div className="flex-shrink- sticky top-0 z-10 flex h-16 bg-white bg-opacity-90 dark:bg-gray-900 dark:bg-opacity-90">
+          <div className="flex-shrink- sticky top-0 z-10 flex h-16 bg-white bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80">
             <button
               type="button"
               className="px-4 text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 dark:text-gray-50 dark:hover:text-gray-200 lg:hidden"
