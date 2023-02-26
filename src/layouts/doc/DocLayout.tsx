@@ -43,7 +43,7 @@ export default function DocLayout({ children }: Props) {
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
             as="div"
-            className="relative z-40 md:hidden"
+            className="relative z-40 lg:hidden"
             onClose={setSidebarOpen}
           >
             <Transition.Child
@@ -107,7 +107,7 @@ export default function DocLayout({ children }: Props) {
                           className={clsx(
                             asPathWithoutLang === item.href
                               ? 'bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white'
-                              : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-900',
+                              : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800',
                             'group flex items-center px-2 py-2 text-base font-medium'
                           )}
                         >
@@ -132,7 +132,7 @@ export default function DocLayout({ children }: Props) {
           </Dialog>
         </Transition.Root>
 
-        <div className="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
+        <div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
           <div className="flex flex-grow flex-col overflow-y-auto bg-white pt-5 dark:bg-gray-900">
             <div className="flex flex-shrink-0 items-center px-4">
               <LogoHorizontalLink href="/doc" className="h-8 w-auto sm:h-10" />
@@ -145,8 +145,8 @@ export default function DocLayout({ children }: Props) {
                     href={item.href}
                     className={clsx(
                       asPathWithoutLang === item.href
-                        ? 'bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white'
-                        : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-900',
+                        ? 'bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white'
+                        : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800',
                       'group flex items-center px-2 py-2 text-sm font-medium'
                     )}
                   >
@@ -166,11 +166,11 @@ export default function DocLayout({ children }: Props) {
             </div>
           </div>
         </div>
-        <div className="flex flex-1 flex-col md:pl-64">
+        <div className="flex flex-1 flex-col lg:pl-64">
           <div className="flex-shrink- sticky top-0 z-10 flex h-16 bg-white bg-opacity-90 dark:bg-gray-900 dark:bg-opacity-90">
             <button
               type="button"
-              className="px-4 text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 dark:text-gray-50 dark:hover:text-gray-200 md:hidden"
+              className="px-4 text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 dark:text-gray-50 dark:hover:text-gray-200 lg:hidden"
               onClick={() => setSidebarOpen(true)}
             >
               <span className="sr-only">Open sidebar</span>
@@ -179,7 +179,7 @@ export default function DocLayout({ children }: Props) {
             <div className="flex flex-1 justify-between px-4">
               <div className="flex flex-1"></div>
 
-              <div className="ml-4 flex items-center gap-3 md:ml-6">
+              <div className="ml-4 flex items-center gap-3 lg:ml-6">
                 <LanguageChanger />
                 <ColorModeChanger />
                 <Menu as="div" className="relative ml-3">
@@ -224,7 +224,7 @@ export default function DocLayout({ children }: Props) {
           </div>
 
           <div className="py-6">
-            <div className="mx-auto min-h-screen px-4 sm:px-6 md:max-w-7xl md:px-8">
+            <div className="mx-auto min-h-screen px-4 sm:px-6 lg:max-w-7xl lg:px-8">
               {children}
             </div>
           </div>
