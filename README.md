@@ -1,4 +1,4 @@
-![Skeet Framework Logo](https://storage.googleapis.com/skeet-assets/imgs/logo/ogp.png)
+![Skeet Web Template](https://storage.googleapis.com/skeet-assets/imgs/samples/skeet-web-template.png)
 
 <p align="center">
   <a href="https://twitter.com/intent/follow?screen_name=ELSOUL_LABO2">
