@@ -24,6 +24,8 @@
 
 Web Media SSG Template
 
+[Skeet - TypeScript Serverless Framework](https://github.com/elsoul/skeet)
+
 ## Aiming to
 
 - Fast Development
