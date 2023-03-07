@@ -34,7 +34,7 @@ description: Media SSG Template README
 ```bash
 # Node version (using nodenv)
 $ node -v
-v18.14.1
+v18.14.2
 
 # Install dependencies
 $ yarn install --frozen-lockfile
