@@ -75,6 +75,8 @@ type Props = {
     | 'black'
   className?: string
   href?: string
+  target?: string
+  rel?: string
   onClick?: () => void
 }
 

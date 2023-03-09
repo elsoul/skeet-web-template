@@ -32,6 +32,8 @@ export default function HomeHeroRow() {
             href="https://github.com/elsoul/skeet-web-template"
             variant="outline"
             className=""
+            target="_blank"
+            rel="noreferrer"
           >
             GitHub
           </Button>
