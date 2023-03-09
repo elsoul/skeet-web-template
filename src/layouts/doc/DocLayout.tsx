@@ -97,29 +97,63 @@ export default function DocLayout({ children }: Props) {
                   </div>
                   <div className="mt-5 h-0 flex-1 overflow-y-auto">
                     <nav className="space-y-1 px-2">
-                      {docMenuNav.map((item) => (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className={clsx(
-                            asPathWithoutLang === item.href
-                              ? 'bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white'
-                              : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800',
-                            'group flex items-center px-2 py-2 text-base font-medium'
-                          )}
-                        >
-                          <item.icon
+                      {docMenuNav.map((item) =>
+                        !item.href && item.children ? (
+                          <div
+                            key={`DocLayout Menu ${item.name}`}
+                            className="pt-2"
+                          >
+                            <p className="p-1 text-sm font-bold text-gray-400 dark:text-gray-300">
+                              {t(item.name)}
+                            </p>
+                            {item.children.map((nav) => (
+                              <Link
+                                key={`DocLayout Menu ${item.name} ${nav.name}`}
+                                href={nav.href}
+                                className={clsx(
+                                  asPathWithoutLang === nav.href
+                                    ? 'bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white'
+                                    : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800',
+                                  'group flex items-center px-2 py-2 text-sm font-medium'
+                                )}
+                              >
+                                <nav.icon
+                                  className={clsx(
+                                    asPathWithoutLang === nav.href
+                                      ? 'text-gray-900  dark:text-white'
+                                      : 'text-gray-700 dark:text-gray-50',
+                                    'mr-3 h-6 w-6 flex-shrink-0'
+                                  )}
+                                  aria-hidden="true"
+                                />
+                                {t(nav.name)}
+                              </Link>
+                            ))}
+                          </div>
+                        ) : (
+                          <Link
+                            key={item.name}
+                            href={item.href}
                             className={clsx(
                               asPathWithoutLang === item.href
-                                ? 'text-gray-900 dark:text-white'
-                                : 'text-gray-700 dark:text-gray-50',
-                              'mr-4 h-6 w-6 flex-shrink-0'
+                                ? 'bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white'
+                                : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800',
+                              'group flex items-center px-2 py-2 text-base font-medium'
                             )}
-                            aria-hidden="true"
-                          />
-                          {t(item.name)}
-                        </Link>
-                      ))}
+                          >
+                            <item.icon
+                              className={clsx(
+                                asPathWithoutLang === item.href
+                                  ? 'text-gray-900 dark:text-white'
+                                  : 'text-gray-700 dark:text-gray-50',
+                                'mr-4 h-6 w-6 flex-shrink-0'
+                              )}
+                              aria-hidden="true"
+                            />
+                            {t(item.name)}
+                          </Link>
+                        )
+                      )}
                     </nav>
                   </div>
                 </Dialog.Panel>
@@ -136,29 +170,60 @@ export default function DocLayout({ children }: Props) {
             </div>
             <div className="mt-5 flex flex-1 flex-col">
               <nav className="flex-1 space-y-1 px-2 pb-4">
-                {docMenuNav.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={clsx(
-                      asPathWithoutLang === item.href
-                        ? 'bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white'
-                        : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800',
-                      'group flex items-center px-2 py-2 text-sm font-medium'
-                    )}
-                  >
-                    <item.icon
+                {docMenuNav.map((item) =>
+                  !item.href && item.children ? (
+                    <div key={`DocLayout Menu ${item.name}`} className="pt-2">
+                      <p className="p-1 text-sm font-bold text-gray-400 dark:text-gray-300">
+                        {t(item.name)}
+                      </p>
+                      {item.children.map((nav) => (
+                        <Link
+                          key={`DocLayout Menu ${item.name} ${nav.name}`}
+                          href={nav.href}
+                          className={clsx(
+                            asPathWithoutLang === nav.href
+                              ? 'bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white'
+                              : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800',
+                            'group flex items-center px-2 py-2 text-sm font-medium'
+                          )}
+                        >
+                          <nav.icon
+                            className={clsx(
+                              asPathWithoutLang === nav.href
+                                ? 'text-gray-900  dark:text-white'
+                                : 'text-gray-700 dark:text-gray-50',
+                              'mr-3 h-6 w-6 flex-shrink-0'
+                            )}
+                            aria-hidden="true"
+                          />
+                          {t(nav.name)}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <Link
+                      key={`DocLayout Menu ${item.name}`}
+                      href={item.href}
                       className={clsx(
                         asPathWithoutLang === item.href
-                          ? 'text-gray-900  dark:text-white'
-                          : 'text-gray-700 dark:text-gray-50',
-                        'mr-3 h-6 w-6 flex-shrink-0'
+                          ? 'bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white'
+                          : 'text-gray-700 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800',
+                        'group flex items-center px-2 py-2 text-sm font-medium'
                       )}
-                      aria-hidden="true"
-                    />
-                    {t(item.name)}
-                  </Link>
-                ))}
+                    >
+                      <item.icon
+                        className={clsx(
+                          asPathWithoutLang === item.href
+                            ? 'text-gray-900  dark:text-white'
+                            : 'text-gray-700 dark:text-gray-50',
+                          'mr-3 h-6 w-6 flex-shrink-0'
+                        )}
+                        aria-hidden="true"
+                      />
+                      {t(item.name)}
+                    </Link>
+                  )
+                )}
               </nav>
             </div>
           </div>

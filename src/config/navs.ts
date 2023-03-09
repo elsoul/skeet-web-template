@@ -33,13 +33,26 @@ export const commonFooterNav = [
 
 export const docMenuNav = [
   { name: 'doc:menuNav.home', href: '/doc/', icon: HomeIcon },
-  { name: 'doc:menuNav.motivation', href: '/doc/motivation/', icon: HeartIcon },
   {
-    name: 'doc:menuNav.quickstart',
-    href: '/doc/quickstart/',
-    icon: RocketLaunchIcon,
+    name: 'doc:menuNav.general.groupTitle',
+    children: [
+      {
+        name: 'doc:menuNav.general.motivation',
+        href: '/doc/general/motivation/',
+        icon: HeartIcon,
+      },
+      {
+        name: 'doc:menuNav.general.quickstart',
+        href: '/doc/general/quickstart/',
+        icon: RocketLaunchIcon,
+      },
+      {
+        name: 'doc:menuNav.general.readme',
+        href: '/doc/general/readme/',
+        icon: BookOpenIcon,
+      },
+    ],
   },
-  { name: 'doc:menuNav.readme', href: '/doc/readme/', icon: BookOpenIcon },
 ]
 
 export const docHeaderNav = [

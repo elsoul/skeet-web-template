@@ -9,9 +9,12 @@
   "nextPage": "次のページ",
   "menuNav": {
     "home": "ドキュメントホーム",
-    "motivation": "モチベーション",
-    "quickstart": "クイックスタート",
-    "readme": "README"
+    "general": {
+      "groupTitle": "全般",
+      "motivation": "モチベーション",
+      "quickstart": "クイックスタート",
+      "readme": "README"
+    }
   },
   "headerNav": {
     "home": "ホームページ",

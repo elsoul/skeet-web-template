@@ -9,9 +9,12 @@
   "nextPage": "Next page",
   "menuNav": {
     "home": "Doc Home",
-    "motivation": "Motivation",
-    "quickstart": "Quickstart",
-    "readme": "README"
+    "general": {
+      "groupTitle": "General",
+      "motivation": "Motivation",
+      "quickstart": "Quickstart",
+      "readme": "README"
+    }
   },
   "headerNav": {
     "home": "Media Home",
