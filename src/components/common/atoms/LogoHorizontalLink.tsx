@@ -21,13 +21,13 @@ export default function LogoHorizontalLink({
         <span className="sr-only">Skeet</span>
         <Image
           src={logoHorizontal}
-          alt="Skeet Framework"
+          alt="Logo"
           className={clsx('dark:hidden ', className)}
           unoptimized
         />
         <Image
           src={logoHorizontalInvert}
-          alt="Skeet Framework"
+          alt="Logo"
           className={clsx('hidden dark:block', className)}
           unoptimized
         />
