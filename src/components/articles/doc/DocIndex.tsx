@@ -10,17 +10,17 @@ import clsx from 'clsx'
 
 const actions = [
   {
-    title: 'doc:motivationTitle',
-    body: 'doc:motivationBody',
-    href: '/doc/motivation',
+    title: 'doc:actions.motivation.title',
+    body: 'doc:actions.motivation.Body',
+    href: '/doc/general/motivation',
     icon: HeartIcon,
     iconForeground: 'text-pink-700',
     iconBackground: 'bg-pink-50',
   },
   {
-    title: 'doc:quickstartTitle',
-    body: 'doc:quickstartBody',
-    href: '/doc/quickstart',
+    title: 'doc:actions.quickstart.title',
+    body: 'doc:actions.quickstart.body',
+    href: '/doc/general/quickstart',
     icon: RocketLaunchIcon,
     iconForeground: 'text-green-700',
     iconBackground: 'bg-green-50',

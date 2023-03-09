@@ -18,10 +18,19 @@ export default function DocPagination({}: Props) {
   }, [router.asPath])
   const pageInfo = useMemo(() => {
     const pages = docMenuNav
+      .map((item) => {
+        if (item.href) {
+          return item
+        }
+        if (item.children) {
+          return item.children.map((i) => i)
+        }
+      })
+      .flat()
     const currentPageNum = pages.findIndex(
-      (item) => asPathWithoutLang === item.href
+      (item) => asPathWithoutLang === item?.href
     )
-    console.log(currentPageNum)
+
     return {
       previousPage: pages[currentPageNum - 1],
       nextPage: pages[currentPageNum + 1],

@@ -1,12 +1,18 @@
 {
   "title": "Doc Home",
-  "motivationTitle": "Motivation",
-  "motivationBody": "We provide a development platform that allows you to focus on the essence of your business. You can start the media as even open source!",
-  "quickstartTitle": "Quickstart",
-  "quickstartBody": "Media SSG Template Quickstart",
   "body": "You can start creating documents compatible with syntax highlights immediately",
   "previousPage": "Previous page",
   "nextPage": "Next page",
+  "actions": {
+    "motivation": {
+      "title": "Motivation",
+      "body": "We provide a development platform that allows you to focus on the essence of your business. You can start the media as even open source!"
+    },
+    "quickstart": {
+      "title": "Quickstart",
+      "body": "Media SSG Template Quickstart"
+    }
+  },
   "menuNav": {
     "home": "Doc Home",
     "general": {
