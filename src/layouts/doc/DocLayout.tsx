@@ -15,6 +15,9 @@ import { useTranslation } from 'next-i18next'
 import Link from '@/components/routing/Link'
 import LanguageChanger from '@/components/utils/LanguageChanger'
 import ColorModeChanger from '@/components/utils/ColorModeChanger'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons'
+import siteConfig from '@/config/site'
 
 type Props = {
   children: ReactNode
@@ -244,6 +247,34 @@ export default function DocLayout({ children }: Props) {
               <div className="ml-4 flex items-center gap-3 lg:ml-6">
                 <LanguageChanger />
                 <ColorModeChanger />
+                <a
+                  href={`https://github.com/elsoul/skeet`}
+                  className="group text-gray-700 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-200"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    size="sm"
+                    aria-label="GitHub icon"
+                    className="mt-1.5 ml-2 h-5 w-5"
+                  />
+                </a>
+                <a
+                  href={`${siteConfig.discordInvitationLink}`}
+                  className="group text-gray-700 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-200"
+                  aria-label="Discord Server Invitation"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faDiscord}
+                    size="sm"
+                    aria-label="Discord icon"
+                    className="mt-1.5 ml-2 h-5 w-5"
+                  />
+                </a>
                 <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex max-w-xs items-center text-sm text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:text-gray-50 dark:hover:text-gray-200 dark:hover:text-gray-200">
