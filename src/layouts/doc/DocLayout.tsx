@@ -136,7 +136,7 @@ export default function DocLayout({ children }: Props) {
                         ) : (
                           <Link
                             key={item.name}
-                            href={item.href}
+                            href={item.href ?? ''}
                             className={clsx(
                               asPathWithoutLang === item.href
                                 ? 'bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white'
@@ -144,15 +144,17 @@ export default function DocLayout({ children }: Props) {
                               'group flex items-center px-2 py-2 text-base font-medium'
                             )}
                           >
-                            <item.icon
-                              className={clsx(
-                                asPathWithoutLang === item.href
-                                  ? 'text-gray-900 dark:text-white'
-                                  : 'text-gray-700 dark:text-gray-50',
-                                'mr-4 h-6 w-6 flex-shrink-0'
-                              )}
-                              aria-hidden="true"
-                            />
+                            {item.icon && (
+                              <item.icon
+                                className={clsx(
+                                  asPathWithoutLang === item.href
+                                    ? 'text-gray-900 dark:text-white'
+                                    : 'text-gray-700 dark:text-gray-50',
+                                  'mr-4 h-6 w-6 flex-shrink-0'
+                                )}
+                                aria-hidden="true"
+                              />
+                            )}
                             {t(item.name)}
                           </Link>
                         )
@@ -206,7 +208,7 @@ export default function DocLayout({ children }: Props) {
                   ) : (
                     <Link
                       key={`DocLayout Menu ${item.name}`}
-                      href={item.href}
+                      href={item.href ?? ''}
                       className={clsx(
                         asPathWithoutLang === item.href
                           ? 'bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white'
@@ -214,15 +216,17 @@ export default function DocLayout({ children }: Props) {
                         'group flex items-center px-2 py-2 text-sm font-medium'
                       )}
                     >
-                      <item.icon
-                        className={clsx(
-                          asPathWithoutLang === item.href
-                            ? 'text-gray-900  dark:text-white'
-                            : 'text-gray-700 dark:text-gray-50',
-                          'mr-3 h-6 w-6 flex-shrink-0'
-                        )}
-                        aria-hidden="true"
-                      />
+                      {item.icon && (
+                        <item.icon
+                          className={clsx(
+                            asPathWithoutLang === item.href
+                              ? 'text-gray-900  dark:text-white'
+                              : 'text-gray-700 dark:text-gray-50',
+                            'mr-3 h-6 w-6 flex-shrink-0'
+                          )}
+                          aria-hidden="true"
+                        />
+                      )}
                       {t(item.name)}
                     </Link>
                   )
@@ -296,7 +300,7 @@ export default function DocLayout({ children }: Props) {
                         <Menu.Item key={item.name}>
                           {({ active }) => (
                             <Link
-                              href={item.href}
+                              href={item.href ?? ''}
                               className={clsx(
                                 active
                                   ? 'bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white'

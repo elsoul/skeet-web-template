@@ -44,7 +44,7 @@ export default function DocPagination({}: Props) {
           {pageInfo.previousPage && (
             <>
               <div className="group hover:cursor-pointer">
-                <Link href={pageInfo.previousPage.href}>
+                <Link href={pageInfo.previousPage.href ?? ''}>
                   <div className="w-full border hover:bg-gray-50 dark:hover:bg-gray-800">
                     <div className="relative p-4">
                       <p className="flex items-center text-sm font-light text-gray-900 group-hover:text-gray-600 dark:text-gray-50 dark:group-hover:text-gray-300">
@@ -66,7 +66,7 @@ export default function DocPagination({}: Props) {
           {pageInfo.nextPage && (
             <>
               <div className="group hover:cursor-pointer">
-                <Link href={pageInfo.nextPage.href}>
+                <Link href={pageInfo.nextPage.href ?? ''}>
                   <div className="w-full border hover:bg-gray-50 dark:hover:bg-gray-800">
                     <div className="relative p-4">
                       <p className="flex items-center justify-end text-sm font-light text-gray-900 group-hover:text-gray-600 dark:text-gray-50 dark:group-hover:text-gray-300">

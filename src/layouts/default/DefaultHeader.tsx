@@ -68,7 +68,7 @@ export default function DefaultHeader() {
                   {defaultMainNav.map((nav) => (
                     <Link
                       key={`${nav.name} DefaultHeader.defaultMainNav`}
-                      href={nav.href}
+                      href={nav.href ?? ''}
                       className="text-base font-medium text-gray-700 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-200"
                     >
                       {t(nav.name)}
@@ -146,7 +146,7 @@ export default function DefaultHeader() {
                         {defaultMainNav.map((nav) => (
                           <Link
                             key={`${nav.name} DefaultHeader.defaultMainNav.mobile`}
-                            href={nav.href}
+                            href={nav.href ?? ''}
                             className="block w-full text-base font-medium text-gray-700 hover:text-gray-900 active:text-gray-800 dark:text-gray-50 dark:hover:text-gray-200"
                             onClick={() => close()}
                           >
