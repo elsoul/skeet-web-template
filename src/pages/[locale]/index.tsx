@@ -2,6 +2,7 @@ import { ReactElement } from 'react'
 import { getStaticPaths, makeStaticProps } from '@/lib/getStatic'
 import DefaultLayout from '@/layouts/default/DefaultLayout'
 import HeroRow from '@/components/pages/home/HeroRow'
+import siteConfig from '@/config/site'
 
 const seo = {
   pathname: '/',
@@ -10,8 +11,8 @@ const seo = {
     en: 'Top page',
   },
   description: {
-    ja: 'Next.jsのスターターキット。SEO対応、多言語対応、SSG。',
-    en: 'Next.js Starter kit. SEO compatible, i18n translation, SSG.',
+    ja: siteConfig.descriptionJA,
+    en: siteConfig.descriptionEN,
   },
   img: null,
 }
