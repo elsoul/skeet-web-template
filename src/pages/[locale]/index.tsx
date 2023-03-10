@@ -3,6 +3,7 @@ import { getStaticPaths, makeStaticProps } from '@/lib/getStatic'
 import DefaultLayout from '@/layouts/default/DefaultLayout'
 import HeroRow from '@/components/pages/home/HeroRow'
 import siteConfig from '@/config/site'
+import DiscordRow from '@/components/pages/common/DiscordRow'
 
 const seo = {
   pathname: '/',
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <>
       <HeroRow />
+      <DiscordRow />
     </>
   )
 }
