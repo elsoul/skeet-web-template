@@ -34,8 +34,8 @@ export default function BlogIndex({ articles, urls }: Props) {
                     <Image
                       src={article.thumbnail}
                       alt={article.title}
-                      width="640"
-                      height="320"
+                      width="16"
+                      height="9"
                       className="aspect-video w-full bg-gray-50 object-cover group-hover:opacity-80 dark:bg-gray-800"
                       unoptimized
                     />
