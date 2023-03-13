@@ -36,7 +36,7 @@ export default function BlogIndex({ articles, urls }: Props) {
                       alt={article.title}
                       width="640"
                       height="320"
-                      className="aspect-[16/9] w-full bg-gray-50 object-cover group-hover:opacity-80 dark:bg-gray-800 sm:aspect-[2/1] lg:aspect-[3/2]"
+                      className="aspect-video w-full bg-gray-50 object-cover group-hover:opacity-80 dark:bg-gray-800"
                       unoptimized
                     />
                   </div>
