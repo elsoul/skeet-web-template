@@ -4,9 +4,8 @@ import {
   HomeIcon,
   RocketLaunchIcon,
 } from '@heroicons/react/24/outline'
-import React from 'react'
 
-export const defaultMainNav: NavMenu[] = [
+export const defaultMainNav = [
   {
     name: 'common:navs.defaultMainNav.blog',
     href: '/blog/',
@@ -17,7 +16,7 @@ export const defaultMainNav: NavMenu[] = [
   },
 ]
 
-export const commonFooterNav: NavMenu[] = [
+export const commonFooterNav = [
   {
     name: 'common:navs.commonFooterNav.blog',
     href: '/blog/',
@@ -32,7 +31,7 @@ export const commonFooterNav: NavMenu[] = [
   },
 ]
 
-export const docMenuNav: NavMenu[] = [
+export const docMenuNav = [
   { name: 'doc:menuNav.home', href: '/doc/', icon: HomeIcon },
   {
     name: 'doc:menuNav.general.groupTitle',
@@ -56,7 +55,7 @@ export const docMenuNav: NavMenu[] = [
   },
 ]
 
-export const docHeaderNav: NavMenu[] = [
+export const docHeaderNav = [
   {
     name: 'doc:headerNav.home',
     href: '/',
@@ -66,24 +65,3 @@ export const docHeaderNav: NavMenu[] = [
     href: '/blog/',
   },
 ]
-
-type NavMenu = {
-  name: string
-  href?: string
-  icon?: React.ForwardRefExoticComponent<
-    React.SVGProps<SVGSVGElement> & {
-      title?: string | undefined
-      titleId?: string | undefined
-    }
-  >
-  children?: {
-    name: string
-    href: string
-    icon: React.ForwardRefExoticComponent<
-      React.SVGProps<SVGSVGElement> & {
-        title?: string | undefined
-        titleId?: string | undefined
-      }
-    >
-  }[]
-}
