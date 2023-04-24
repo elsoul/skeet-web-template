@@ -17,7 +17,7 @@ export default function HomeHeroRow() {
 
   return (
     <>
-      <Container className="pt-24 pb-20 text-center lg:pt-40">
+      <Container className="pb-20 pt-24 text-center lg:pt-40">
         <h1 className="font-display mx-auto max-w-4xl text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-7xl">
           Media SSG Template
         </h1>
@@ -41,7 +41,7 @@ export default function HomeHeroRow() {
         <div className="mt-36 lg:mt-48">
           <ul
             role="list"
-            className="mt-8 flex flex-col items-center justify-center gap-x-8 sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
+            className="mt-8 flex flex-col items-center justify-center gap-x-8 gap-y-10 sm:gap-x-0 xl:flex-row xl:gap-x-12 xl:gap-y-0"
           >
             {[
               [

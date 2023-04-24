@@ -59,7 +59,7 @@ export default function DefaultHeader() {
                   <LogoHorizontalLink className="h-8 w-auto sm:h-10" />
                 </div>
                 <div className="-my-2 -mr-2 md:hidden">
-                  <Popover.Button className="inline-flex items-center justify-center  p-2 text-gray-700 hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500  dark:text-gray-50 dark:hover:text-gray-200">
+                  <Popover.Button className="inline-flex items-center justify-center  p-2 text-gray-700 hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500  dark:text-gray-50 dark:hover:bg-gray-700 dark:hover:text-gray-200">
                     <span className="sr-only">{t('common:openMenu')}</span>
                     <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -90,7 +90,7 @@ export default function DefaultHeader() {
                       icon={faGithub}
                       size="sm"
                       aria-label="GitHub icon"
-                      className="mt-1.5 ml-2 h-5 w-5"
+                      className="ml-2 mt-1.5 h-5 w-5"
                     />
                   </a>
                   <a
@@ -104,7 +104,7 @@ export default function DefaultHeader() {
                       icon={faDiscord}
                       size="sm"
                       aria-label="Discord icon"
-                      className="mt-1.5 ml-2 h-5 w-5"
+                      className="ml-2 mt-1.5 h-5 w-5"
                     />
                   </a>
                 </div>
@@ -132,7 +132,7 @@ export default function DefaultHeader() {
                           />
                         </div>
                         <div className="-mr-2">
-                          <Popover.Button className="inline-flex items-center justify-center  p-2 text-gray-700 hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500  dark:text-gray-50 dark:hover:text-gray-200">
+                          <Popover.Button className="inline-flex items-center justify-center  p-2 text-gray-700 hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500  dark:text-gray-50 dark:hover:bg-gray-700 dark:hover:text-gray-200">
                             <span className="sr-only">
                               {t('common:closeMenu')}
                             </span>
@@ -141,7 +141,7 @@ export default function DefaultHeader() {
                         </div>
                       </div>
                     </div>
-                    <div className="py-8 px-5">
+                    <div className="px-5 py-8">
                       <div className="grid grid-cols-1 gap-8">
                         {defaultMainNav.map((nav) => (
                           <Link
@@ -168,7 +168,7 @@ export default function DefaultHeader() {
                               icon={faGithub}
                               size="sm"
                               aria-label="GitHub icon"
-                              className="mt-1.5 ml-2 h-5 w-5"
+                              className="ml-2 mt-1.5 h-5 w-5"
                             />
                           </a>
                           <a
@@ -182,7 +182,7 @@ export default function DefaultHeader() {
                               icon={faDiscord}
                               size="sm"
                               aria-label="Discord icon"
-                              className="mt-1.5 ml-2 h-5 w-5"
+                              className="ml-2 mt-1.5 h-5 w-5"
                             />
                           </a>
                         </div>
