@@ -28,7 +28,9 @@ export default function Toc({ toc, activeItemIds }: Props) {
                     activeItemIds.includes(item.id)
                       ? 'bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50'
                       : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-200 dark:hover:bg-gray-900 dark:hover:text-gray-50',
-                    'block px-3 py-2 text-sm font-medium'
+                    `block px-3 py-2 text-sm font-medium ml-${
+                      item.depth > 2 ? 3 : 0
+                    }`
                   )}
                   aria-current={
                     activeItemIds.includes(item.id) ? 'location' : undefined
