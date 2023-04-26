@@ -55,7 +55,7 @@ export default function DocIndex({}: Props) {
                   actionIdx === 1 ? '' : '',
                   actionIdx === actions.length - 2 ? '' : '',
                   actionIdx === actions.length - 1 ? '' : '',
-                  'group relative bg-blue-50 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-500 hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700'
+                  'group relative bg-gray-50 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-500 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700'
                 )}
               >
                 <div>
@@ -81,7 +81,7 @@ export default function DocIndex({}: Props) {
                   </p>
                 </div>
                 <span
-                  className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
+                  className="pointer-events-none absolute right-6 top-6 text-gray-300 group-hover:text-gray-400"
                   aria-hidden="true"
                 >
                   <ArrowUpRightIcon className="h-6 w-6" />
