@@ -3,6 +3,7 @@ import AppLoading from '@/components/loading/AppLoading'
 import AgreeToPolicy from '@/components/utils/AgreeToPolicy'
 import { AppPropsWithLayout } from '@/pages/_app'
 import { Suspense } from 'react'
+import ToastMessage from '@/components/utils/ToastMessage'
 
 export default function Layout({ Component, pageProps }: AppPropsWithLayout) {
   const [mounted, setMounted] = useState(false)
@@ -36,6 +37,7 @@ export default function Layout({ Component, pageProps }: AppPropsWithLayout) {
             <Suspense fallback={<AppLoading />}>
               {getLayout(<Component {...pageProps} />)}
             </Suspense>
+            <ToastMessage />
             <AgreeToPolicy />
           </div>
         </>
