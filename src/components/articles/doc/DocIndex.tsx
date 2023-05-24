@@ -11,7 +11,7 @@ import clsx from 'clsx'
 const actions = [
   {
     title: 'doc:actions.motivation.title',
-    body: 'doc:actions.motivation.Body',
+    body: 'doc:actions.motivation.body',
     href: '/doc/general/motivation',
     icon: HeartIcon,
     iconForeground: 'text-pink-700',
