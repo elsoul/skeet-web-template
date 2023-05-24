@@ -17,7 +17,7 @@ export default function HomeHeroRow() {
 
   return (
     <>
-      <Container className="pb-20 pt-24 text-center lg:pt-40">
+      <Container className="pb-40 pt-24 text-center lg:pb-64 lg:pt-40">
         <h1 className="font-display mx-auto max-w-4xl text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-7xl">
           Media SSG Template
         </h1>

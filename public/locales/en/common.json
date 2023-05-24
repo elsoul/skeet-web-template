@@ -8,10 +8,12 @@
   "closeMenu": "Close menu",
   "navs": {
     "defaultMainNav": {
+      "news": "News",
       "blog": "Blog",
       "doc": "Doc"
     },
     "commonFooterNav": {
+      "news": "News",
       "blog": "Blog",
       "doc": "Doc",
       "privacy": "Privacy"
