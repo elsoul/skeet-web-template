@@ -11,10 +11,6 @@ export const defaultMainNav = [
     href: '/news/',
   },
   {
-    name: 'common:navs.defaultMainNav.blog',
-    href: '/blog/',
-  },
-  {
     name: 'common:navs.defaultMainNav.doc',
     href: '/doc/',
   },
@@ -24,10 +20,6 @@ export const commonFooterNav = [
   {
     name: 'common:navs.commonFooterNav.news',
     href: '/news/',
-  },
-  {
-    name: 'common:navs.commonFooterNav.blog',
-    href: '/blog/',
   },
   {
     name: 'common:navs.commonFooterNav.doc',
@@ -71,9 +63,5 @@ export const docHeaderNav = [
   {
     name: 'doc:headerNav.news',
     href: '/news/',
-  },
-  {
-    name: 'doc:headerNav.blog',
-    href: '/blog/',
   },
 ]

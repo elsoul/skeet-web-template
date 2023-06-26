@@ -1,14 +1,16 @@
 const siteConfig = {
   domain: 'web-template.skeet.dev',
   copyright: 'ELSOUL LABO B.V.',
-  sitenameJA: 'Skeet Web メディアテンプレート',
-  sitenameEN: 'Skeet Web Media Template',
-  keywordsJA: 'Next.js, SSG, テンプレート, メディア, SEO, 多言語対応',
-  keywordsEN: 'Next.js, SSG, Template, Media, SEO, i18n translation',
+  sitenameJA: 'Skeet Web テンプレート',
+  sitenameEN: 'Skeet Web Template',
+  keywordsJA:
+    'Next.js, SSG, テンプレート, SEO, 多言語対応, サーバーレス, TypeScript, PWA',
+  keywordsEN:
+    'Next.js, SSG, Template, SEO, i18n translation, Serverless, TypeScript, PWA',
   descriptionJA:
-    'Next.jsのスターターキット。SEO対応、多言語対応、SSG。オープンソースで開発できます。',
+    'Next.jsのボイラープレート。SEO対応、多言語対応、SSG、PWA。WebAppをオープンソースで開発できます。',
   descriptionEN:
-    'Next.js Starter kit. SEO compatible, i18n translation, SSG. You can develop the media as open source.',
+    'Next.js Boilerplate. SEO compatible, i18n translation, SSG, PWA. You can develop the WebApp as open-source.',
   twitterAccount: '@SkeetDev',
   instagramAccount: 'elsoul_labo',
   githubAccount: 'elsoul',
