@@ -1,18 +1,3 @@
-export type BlogIndex = {
-  title: string
-  category: string
-  thumbnail: string
-  date: string
-}
-export type BlogContent = {
-  title: string
-  asPath: string
-  category: string
-  thumbnail: string
-  date: string
-  content: string
-}
-
 export type NewsIndex = {
   title: string
   category: string

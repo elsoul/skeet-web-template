@@ -8,9 +8,9 @@ const siteConfig = {
   keywordsEN:
     'Next.js, SSG, Template, SEO, i18n translation, Serverless, TypeScript, PWA',
   descriptionJA:
-    'Next.jsのボイラープレート。SEO対応、多言語対応、SSG、PWA。WebAppをオープンソースで開発できます。',
+    'Next.jsのボイラープレート。SEO対応、多言語対応、SSG、PWA。WebAppをすぐに構築開始でき、そのデプロイは保証されています。',
   descriptionEN:
-    'Next.js Boilerplate. SEO compatible, i18n translation, SSG, PWA. You can develop the WebApp as open-source.',
+    'Next.js Boilerplate. SEO compatible, i18n translation, SSG, PWA. You can start building your WebApp today, and its deployment is guaranteed.',
   twitterAccount: '@SkeetDev',
   instagramAccount: 'elsoul_labo',
   githubAccount: 'elsoul',

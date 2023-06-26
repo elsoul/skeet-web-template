@@ -8,7 +8,7 @@ import eslintLogo from '@/assets/img/logo/projects/eslint.svg'
 import prettierLogo from '@/assets/img/logo/projects/prettier.png'
 import reactLogo from '@/assets/img/logo/projects/react.svg'
 import tailwindcssLogo from '@/assets/img/logo/projects/tailwindcss.svg'
-import typescriptLogo from '@/assets/img/logo/projects/typescript.svg'
+import typescriptLogo from '@/assets/img/logo/projects/TypeScriptHorizontal.svg'
 import { Button } from '@/components/common/atoms/Button'
 import clsx from 'clsx'
 
@@ -19,7 +19,7 @@ export default function HomeHeroRow() {
     <>
       <Container className="pb-40 pt-24 text-center lg:pb-64 lg:pt-40">
         <h1 className="font-display mx-auto max-w-4xl text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-7xl">
-          Media SSG Template
+          WebApp Boilerplate
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-gray-700 dark:text-gray-200">
           {t('home:HeroRow.body')}
@@ -101,9 +101,9 @@ export default function HomeHeroRow() {
                           src={project.logo}
                           alt={project.name}
                           className={clsx(
-                            'grayscale hover:opacity-60',
+                            'hover:opacity-60 dark:grayscale',
                             project.name === 'React'
-                              ? 'invert dark:invert-0'
+                              ? 'dark:invert-0'
                               : 'dark:invert'
                           )}
                           width={168}
