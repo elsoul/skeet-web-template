@@ -9,12 +9,10 @@
   "navs": {
     "defaultMainNav": {
       "news": "ニュース",
-      "blog": "ブログ",
       "doc": "ドキュメント"
     },
     "commonFooterNav": {
       "news": "ニュース",
-      "blog": "ブログ",
       "doc": "ドキュメント",
       "privacy": "プライバシーポリシー"
     }
